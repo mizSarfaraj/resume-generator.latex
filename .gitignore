@@ -20,3 +20,5 @@ skills.tex
 # Ignore Python cache directories
 __pycache__/
 *.pyc
+
+data/me_**/
