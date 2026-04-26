@@ -1,0 +1,49 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=8mm]{geometry} 
+\usepackage{enumitem}
+\usepackage{xcolor} 
+
+% 1. Define your custom hex color here (e.g., #0A66C2)
+% Note: Do not include the # symbol in the hex code 
+\definecolor{linkblue}{HTML}{0A66C2} 
+
+% 2. Update hyperref to use your custom color name [cite: 400]
+\usepackage[colorlinks=true, urlcolor=linkblue]{hyperref}
+
+\usepackage{helvet} 
+\renewcommand{\familydefault}{\sfdefault}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% --- 1. HEADER ---
+\input{header.tex}
+
+\vspace{0.1cm}
+% \hrule
+% \vspace{0.3cm} % <-- This controls the space between the header line and "Experience". Adjust if needed!
+
+% --- 2. EXPERIENCE ---
+\noindent{\Large \textbf{Experience}}
+\vspace{2pt}
+{\color{gray}\hrule} % <-- Grey section line
+\vspace{0.2cm}
+\input{experience.tex} 
+
+% --- 3. TECHNICAL SKILLS ---
+\noindent{\Large \textbf{Technical Skills}}
+\vspace{2pt}
+{\color{gray}\hrule} % <-- Grey section line
+\vspace{0.2cm}
+\input{skills.tex}
+
+% --- 4. EDUCATION ---
+\noindent{\Large \textbf{Education}}
+\vspace{2pt}
+{\color{gray}\hrule} % <-- Grey section line
+\vspace{0.2cm}
+\input{education.tex} 
+
+\end{document}
