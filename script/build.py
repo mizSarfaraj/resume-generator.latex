@@ -10,10 +10,18 @@ def build_experience(data_dir):
     for job in jobs:
         latex_output += f"\\noindent\\textbf{{{job['title']}}} \\hfill {job['startDate']} - {job['endDate']} \\\\\n"
         latex_output += f"\\noindent\\textbf{{{job['companyName']}}} \\hfill {job['location']}\n"
-        latex_output += "\\begin{itemize}[leftmargin=0.5cm, topsep=0pt, itemsep=0pt, parsep=0pt]\n"
-        for bullet in job['bullets']:
-            latex_output += f"  \\item {bullet}\n"
-        latex_output += "\\end{itemize}\n\\vspace{0.2cm}\n\n"
+        
+        # ONLY create the list if there are bullets
+        if job.get('bullets') and len(job['bullets']) > 0:
+            latex_output += "\\begin{itemize}[leftmargin=0.5cm, topsep=0pt, itemsep=0pt, parsep=0pt]\n"
+            for bullet in job['bullets']:
+                latex_output += f"  \\item {bullet}\n"
+            latex_output += "\\end{itemize}\n"
+        else:
+            # If no bullets, just add a line break
+            latex_output += "\\\\\n"
+            
+        latex_output += "\\vspace{0.2cm}\n\n"
 
     with open('experience.tex', 'w') as f:
         f.write(latex_output)
@@ -67,6 +75,8 @@ if __name__ == "__main__":
     # Get the folder name from the command line, default to 'main' if none provided
     profile = sys.argv[1] if len(sys.argv) > 1 else 'main'
     data_dir = os.path.join('data', profile)
+
+    print("Using DATA folder:", data_dir)
     
     # Safety check to ensure the folder actually exists
     if not os.path.exists(data_dir):

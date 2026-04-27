@@ -13,3 +13,5 @@ WORKDIR /workspace
 
 # Updated CMD to point to template/resume.tex and delete *.tex at the end
 CMD ["/bin/sh", "-c", "python3 script/build.py $PROFILE && pdflatex template/resume.tex && rm -f *.aux *.log *.out *.tex"]
+# We use the > operator to redirect standard output (stdout) to your text file
+# CMD ["/bin/sh", "-c", "python3 script/build.py $PROFILE > build.py.text && pdflatex template/resume.tex && rm -f *.aux *.log *.out *.tex"]
