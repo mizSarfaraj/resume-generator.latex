@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Languages \\& Frameworks",
+        "items": "Python, Java, JavaScript, React, Node.js, Spring Boot"
+    },
+    {
+        "category": "Infrastructure \\& Tools",
+        "items": "Docker, Kubernetes, AWS, Git, GitHub Actions, Jenkins"
+    },
+    {
+        "category": "Databases",
+        "items": "PostgreSQL, MongoDB, MySQL, Redis"
+    }
+]

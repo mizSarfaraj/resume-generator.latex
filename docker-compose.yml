@@ -1,0 +1,8 @@
+services:
+  resume-builder:
+    build: .
+    volumes:
+      - .:/workspace
+    environment:
+      # If PROFILE is set on your host machine, use it. Otherwise, default to 'main'
+      - PROFILE=${PROFILE:-main}

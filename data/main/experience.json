@@ -1,0 +1,40 @@
+[
+    {
+        "companyName": "Tech Solutions Inc.",
+        "location": "San Francisco, CA",
+        "startDate": "August 2023",
+        "endDate": "Present",
+        "title": "Software Engineer",
+        "bullets": [
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}.",
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}.",
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}.",
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}.",
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}.",
+            "Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}. Developed and maintained scalable backend microservices, reducing average API response times by \\textbf{\\~30\\%}.",
+            "Collaborated with a cross-functional team of 8 developers and designers to launch a new user dashboard.",
+            "Implemented automated testing pipelines, increasing code coverage from 60\\% to \\textbf{95\\%}."
+        ]
+    },
+    {
+        "companyName": "Global R\\&D Partners",
+        "location": "Austin, TX",
+        "startDate": "June 2021",
+        "endDate": "July 2023",
+        "title": "Junior Developer",
+        "bullets": [
+            "Designed a dynamic search module utilizing \\textbf{Python} and ElasticSearch, handling $\\sim$10,000 queries daily.",
+            "Assisted in migrating legacy databases to PostgreSQL, ensuring zero data loss and minimal downtime."
+        ]
+    }
+]
