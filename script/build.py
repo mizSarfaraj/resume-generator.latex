@@ -2,6 +2,15 @@ import json
 import sys
 import os
 
+def build_summary(data_dir):
+    with open(os.path.join(data_dir, 'summary.json'), 'r') as f:
+        summary = json.load(f)
+
+    latex_output = f"\\noindent {summary['summary']} \n" + "\\vspace{0.4cm}\n"
+
+    with open('summary.tex', 'w') as f:
+        f.write(latex_output)
+
 def build_experience(data_dir):
     with open(os.path.join(data_dir, 'experience.json'), 'r') as f:
         jobs = json.load(f)
@@ -58,6 +67,7 @@ def build_header(data_dir):
     # Build the center-aligned header
     latex_output = "\\begin{center}\n"
     latex_output += f"    {{\\huge \\textbf{{{header['name']}}}}}\\\\[0.2cm]\n"
+    latex_output += f"    {{\\large {header['title']}}}\\\\[0.1cm]\n"
     
     # Automatically join all items in the details array with a separator
     contact_line = " \\textbar{} ".join(header['details'])
@@ -88,4 +98,5 @@ if __name__ == "__main__":
     build_skills(data_dir)
     build_education(data_dir)
     build_header(data_dir)
+    build_summary(data_dir)
     print("Resume built successfully!")
