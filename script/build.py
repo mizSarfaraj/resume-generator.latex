@@ -17,7 +17,7 @@ def build_experience(data_dir):
 
     latex_output = ""
     for job in jobs:
-        latex_output += f"\\noindent\\textbf{{{job['title']}}} \\hfill {job['startDate']} - {job['endDate']} \\\\\n"
+        latex_output += f"\\noindent\\textbf{{{job['title']}}} \\hfill {job['startDate']} to {job['endDate']} \\\\\n"
         latex_output += f"\\noindent\\textbf{{{job['companyName']}}} \\hfill {job['location']}\n"
         
         # ONLY create the list if there are bullets
@@ -54,7 +54,7 @@ def build_education(data_dir):
     latex_output = ""
     for school in schools:
         latex_output += f"\\noindent\\textbf{{{school['instituteName']}}} \\hfill {school['location']} \\\\\n"
-        latex_output += f"\\noindent {school['Degree']} \\hfill {school['startYear']} - {school['endYear']} \\\\\n"
+        latex_output += f"\\noindent {school['Degree']} \\hfill {school['startYear']} to {school['endYear']} \\\\\n"
         latex_output += "\\vspace{0.2cm}\n\n"
 
     with open('education.tex', 'w') as f:
